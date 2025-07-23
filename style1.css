@@ -1,0 +1,46 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #1db954, #121212);
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.btn-outline-light:hover {
+  background-color: #1db954;
+  border-color: #1db954;
+  color: #fff;
+}
+
+.song {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.box {
+  height: 500px;
+  width: 500px;
+  column-gap: 3rem;
+  transition: transform 0.3s ease, 0.3s ease;
+  cursor: pointer;
+  animation: zoomIn 0.5s ease;
+}
+
+.box:hover {
+  transform: scale(1.08);
+}
+
+.screenshot {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+}
