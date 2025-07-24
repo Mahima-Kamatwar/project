@@ -12,72 +12,101 @@
 </head>
 
 <body>
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-light px-4">
-    <a class="navbar-brand" href="#"><i class="fas fa-user"></i> My Portfolio</a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-      </ul>
+  <!-- header -->
+  <header id="header">
+    <div class="container-fluid">
+      <div class="container p-2">
+        <nav class="navbar navbar-expand-md navbar-light bg-light px-3 rounded-pill">
+          <div class="navbar-brand d-flex gap-2">
+            <div class="icon-container position-relative" style="width: 30px; height: 30px;"></div>
+            <div class="bg-primary-custom rounded-circle w-100 h-100"></div>
+            <span class="fs-1 mb-1 fa-solid fa-user-circle"></span>
+            <h2>Portfolio</h2>
+          </div>
+          <ul class="navbar-nav gap-3 ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#hero-section">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                Project
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                Skills
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-  </nav>
-  <div class="container-fluid bg-dark">
-    <!-- Hero Section -->
+  </header>
+  <!-- hero section -->
+  <div id="hero-section" class="container-fluid bg-dark text-light p-5">
     <section class="hero d-flex flex-column text-light justify-content-center align-items-center">
       <div>
         <h1>Hello, I'm Mahima</h1>
-        <p class="lead">Full Stack Developer | Frontend Expert</p>
+        <h6>Full Stack Developer | Frontend Expert</h6>
       </div>
       <a href="#projects" class=" button btn btn-outline-light mt-4 fa-solid fa-pencil justify-content-center">View My
-        Work</a>
+        Work</h3></a>
     </section>
 
     <!-- About Section -->
-    <div class="container py-5 text-light">
-      <h2 class="section-title ms-4">About Me</h2>
+    <div class="container p-5 text-light">
+      <h2 class="d-flex ms-5">About Me</h2>
       <div class="row align-items-center">
         <div class="col-md-6">
           <img src="./media/Screenshot 2025-07-24 145345.png" class=" image img-fluid rounded-circle ms-5">
         </div>
         <div class="col-md-6">
-          <p>I am a full stack web developer specializing in building (and occasionally designing) exceptional digital
+          <h3>I am a full stack web developer specializing in building exceptional digital
             experiences. Currently, I focus on building responsive full-stack web applications using technologies like
-            React, Bootstrap, and Node.js.</p>
+            HTML , CSS , Bootstrap</h3>
         </div>
       </div>
     </div>
 
     <!-- Skills Section -->
-    <section class="bg-light py-5">
+    <div class="bg-light py-4 text-dark">
       <div class="container">
-        <h2 class="justify-content-center">Skills</h2>
+        <h2 class="d-flex justify-content-center mb-2">Skills</h2>
         <div class="row text-center">
-          <div class="col-md-3"><i class="fa-solid fa-html5"></i>
+          <div class="col-md-4 fs-1"><i class="fab fa-html5 text-danger"></i>
             <p>HTML</p>
           </div>
-          <div class="col-md-3"><i class="fa-solid fa-css3"></i>
+          <div class="col-md-4 fs-1"><i class="fab fa-css3 text-primary"></i>
             <p>CSS</p>
           </div>
-          <div class="col-md-3"><i class="fa-solid fa-javascript"></i>
+          <div class="col-md-4 fs-1"><i class="fab fa-java text-warning"></i>
             <p>JavaScript</p>
           </div>
-          <div class="col-md-3"><i class="fa-solid fa-bootstrap5"></i>
+          <div class="col-md-4 fs-1"><i class="fab fa-bootstrap text-success"></i>
             <p>Bootstrap</p>
+          </div>
+          <div class="col-md-4 fs-1"><i class="fab fa-react"></i>
+            <p>React</p>
+          </div>
+          <div class="col-md-4 fs-1"><i class="fab fa-github"></i>
+            <p>Github</p>
           </div>
         </div>
       </div>
-    </section><br>
+    </div>
+    <br>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-5 bg-light">
+    <div id="projects" class="py-5 bg-light text-dark">
       <div class="container mb-2">
-        <h2>Projects</h2>
+        <h2 class="d-flex justify-content-center">Projects</h2>
         <div class="row g-4">
           <div class="col-md-4">
             <div class="card bg-dark text-light">
@@ -117,101 +146,75 @@
           </div>
         </div>
       </div>
-    </section><br>
-    <!-- card -->
-    <h1 class="text-light ms-2">Store</h1>
-    <div class="row g-5">
-      <div class="col-lg-6">
-        <div class="card-custom p-4">
-          <div class="icon-box">
-            <i class="fa-solid fa-paint-brush"></i>
+    </div><br>
+    <!-- courses -->
+    <div class="bg-light py-4 text-dark">
+      <div class="container-fluid">
+        <h2 class="d-flex justify-content-center">📚Courses</h2>
+        <div class="course-grid">
+          <div class="box box1">
+            <h1>Java Backend</h1>
+            <div class="mid">Live Development Course</div>
+            <div class="bottom">Intermediate to Advance<br>325k+ interested<br><a href="#">Explore</a></div>
           </div>
-          <p class="content">
-            We create intuitive, visually appealing interfaces that enhance user experience and
-            navigation, ensuring your app is both beautiful and functional across all devices.
-          </p>
-          <div class="d-flex justify-content-between align-items-center mt-3">
-            <h4 class="title">UI Design</h4>
-            <div class="number">01</div>
+          <div class="box box2">
+            <h1>Tech Interview</h1>
+            <div class="mid">From DSA to System Design</div>
+            <div class="bottom">Beginner to Advance<br>231k+ interested<br><a href="#">Explore</a></div>
+          </div>
+          <div class="box box3">
+            <h1>Full Stack</h1>
+            <div class="mid">React & Node.js Live</div>
+            <div class="bottom">Beginner to Advance<br>627k+ interested<br><a href="#">Explore</a></div>
+          </div>
+          <div class="box box4">
+            <h1>C++ Programming</h1>
+            <div class="mid">Online C++ Course</div>
+            <div class="bottom">Beginner to Advance<br>326k+ interested<br><a href="#">Explore</a></div>
+          </div>
+          <div class="box box5">
+            <h1>Placement Pro</h1>
+            <div class="mid">Mastering Soft Skills</div>
+            <div class="bottom">Beginner to Advance<br>26k+ interested<br><a href="#">Explore</a></div>
+          </div>
+          <div class="box box6">
+            <h1>Data Analysis</h1>
+            <div class="mid">Training Program</div>
+            <div class="bottom">Beginner to Advance<br>57k+ interested<br><a href="#">Explore</a></div>
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
-        <div class="card-custom p-4">
-          <div class="icon-box">
-            <i class=" fa-solid fa-code"></i>
+    </div><br>
+    <!-- Contact Section -->
+    <div class="bg-light py-4 text-dark">
+      <div class="container-fluid">
+        <h2 class="d-flex justify-content-center">Contact Me</h2>
+        <form>
+          <div class="bg-light text-dark m-3 p-3">
+            <h3>Full Name</h3>
+            <input placeholder="enter your name" class="form-control" type="text"><br>
+            <h3>Email</h3>
+            <input placeholder="enter email" class="form-control" type="text"><br>
+            <h3>Any Message</h3>
+            <textarea class="form-control">Message</textarea>
+            <button type="submit" class="btn btn-primary mt-4 p-1">Send Message</button>
           </div>
-          <p class="content">
-            Our team builds reliable, scalable solutions, delivering clean code that powers websites and
-            mobile apps with top-notch performance and security.
-          </p>
-          <div class="d-flex justify-content-between align-items-center mt-3">
-            <h5 class="title">Development</h5>
-            <div class="number">02</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="card-custom p-4">
-          <div class="icon-box">
-            <i class="fa-solid fa-pencil"></i>
-          </div>
-          <p class="content">
-            We design responsive, user-friendly websites that blend aesthetics with functionality,
-            providing a seamless experience across devices and reflecting your brand’s identity.
-          </p>
-          <div class="d-flex justify-content-between align-items-center mt-3 mb-2">
-            <h5 class="title">Graphic Design</h5>
-            <div class="number">03</div>
-          </div>
-        </div>
-      </div><br>
-      <div class="col-lg-6">
-        <div class="card-custom p-4">
-          <div class="icon-box">
-            <i class="fa-solid fa-bullhorn"></i>
-          </div>
-          <p class="content">
-            We craft memorable brand identities, from logos to complete strategies, ensuring consistency
-            and a strong connection with your audience across all platforms.
-          </p>
-          <div class="d-flex justify-content-between align-items-center mt-3 mb-2">
-            <h5 class="title">Branding</h5>
-            <div class="number">04</div>
-          </div>
-        </div>
+        </form>
       </div>
     </div>
-  </div><br>
-  <!-- Contact Section -->
-  <div class="container-fluid bg-dark">
-    <h2 class="text-light ms-3">Contact Me</h2>
-    <form>
-      <div class="bg-light text-dark m-3 p-3">
-        <h3>Full Name</h3>
-        <input placeholder="enter your name" class="form-control" type="text"><br>
-        <h3>Email</h3>
-        <input placeholder="enter email" class="form-control" type="text"><br>
-        <h3>Any Message</h3>
-        <textarea class="form-control">Message</textarea>
-        <button type="submit" class="btn btn-primary mt-4 p-1">Send Message</button>
-      </div>
-    </form>
-  </div>
-  </div>
 
-  <!-- Footer -->
-  <footer class="text-center">
-    <div class="container-fluid bg-dark">
-      <p class="mb-1 text-light">© 2025 Mahima Kamatwar</p>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
+    <!-- Footer -->
+    <div class=" footer text-center">
+      <div class="container-fluid bg-dark">
+        <p class="mb-1 text-light">© 2025 Mahima Kamatwar</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
       </div>
     </div>
-  </footer>
-  
+
 
 </body>
 
