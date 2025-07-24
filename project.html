@@ -18,10 +18,10 @@
       <div class="container p-2">
         <nav class="navbar navbar-expand-md navbar-light bg-light px-3 rounded-pill">
           <div class="navbar-brand d-flex gap-2">
-            <div class="icon-container position-relative" style="width: 30px; height: 30px;"></div>
+            <!-- <div class="icon-container position-relative" style="width: 30px; height: 30px;"></div> -->
             <div class="bg-primary-custom rounded-circle w-100 h-100"></div>
-            <span class="fs-1 mb-1 fa-solid fa-user-circle"></span>
-            <h2>Portfolio</h2>
+            <span class="fs-1 fa-solid fa-user-circle"></span>
+            <h2>Web Developer</h2>
           </div>
           <ul class="navbar-nav gap-3 ms-auto">
             <li class="nav-item">
@@ -62,10 +62,11 @@
 
     <!-- About Section -->
     <div class="container p-5 text-light">
-      <h2 class="d-flex ms-5">About Me</h2>
+      <h2 class="d-flex justify-content-center">About Me</h2>
       <div class="row align-items-center">
         <div class="col-md-6">
-          <img src="./media/Screenshot 2025-07-24 145345.png" class=" image img-fluid rounded-circle ms-5">
+          <img src="./media/Screenshot 2025-07-24 145345.png"
+            class=" image img-fluid rounded-circle d-flex justify-content-center">
         </div>
         <div class="col-md-6">
           <h3>I am a full stack web developer specializing in building exceptional digital
@@ -78,7 +79,7 @@
     <!-- Skills Section -->
     <div class="bg-light py-4 text-dark">
       <div class="container">
-        <h2 class="d-flex justify-content-center mb-2">Skills</h2>
+        <h2 class="d-flex justify-content-center mb-5 border border-outline-4 border-dark">📊Skills</h2>
         <div class="row text-center">
           <div class="col-md-4 fs-1"><i class="fab fa-html5 text-danger"></i>
             <p>HTML</p>
@@ -106,7 +107,7 @@
     <!-- Projects Section -->
     <div id="projects" class="py-5 bg-light text-dark">
       <div class="container mb-2">
-        <h2 class="d-flex justify-content-center">Projects</h2>
+        <h2 class="d-flex justify-content-center mb-5 border border-outline-4 border-dark">🗂️Projects</h2>
         <div class="row g-4">
           <div class="col-md-4">
             <div class="card bg-dark text-light">
@@ -149,8 +150,8 @@
     </div><br>
     <!-- courses -->
     <div class="bg-light py-4 text-dark">
-      <div class="container-fluid">
-        <h2 class="d-flex justify-content-center">📚Courses</h2>
+      <div class="container">
+        <h2 class="d-flex justify-content-center mb-5 border border-outline-4 border-dark">📚Courses</h2>
         <div class="course-grid">
           <div class="box box1">
             <h1>Java Backend</h1>
@@ -187,17 +188,19 @@
     </div><br>
     <!-- Contact Section -->
     <div class="bg-light py-4 text-dark">
-      <div class="container-fluid">
-        <h2 class="d-flex justify-content-center">Contact Me</h2>
+      <div class="container">
+        <h2 class="d-flex justify-content-center mb-5 border border-outline-4 border-dark">☎Contact Me</h2>
         <form>
           <div class="bg-light text-dark m-3 p-3">
             <h3>Full Name</h3>
-            <input placeholder="enter your name" class="form-control" type="text"><br>
+            <input placeholder="enter name" class="form-control" type="text"><br>
             <h3>Email</h3>
-            <input placeholder="enter email" class="form-control" type="text"><br>
+            <input placeholder="enter email" class="form-control" type="email">
+            <h3>Contact Number</h3>
+            <input placeholder="enter phone number" class="form-control" type="number"><br>
             <h3>Any Message</h3>
             <textarea class="form-control">Message</textarea>
-            <button type="submit" class="btn btn-primary mt-4 p-1">Send Message</button>
+            <button type="submit" class="btn btn-primary mt-4 p-3">Submit</button>
           </div>
         </form>
       </div>

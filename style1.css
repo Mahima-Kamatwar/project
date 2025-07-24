@@ -21,8 +21,11 @@
 }
 
 #header .nav-item {
-  height: 50px;
+  height: 4px;
   width: auto;
+  font-size: 2rem;
+  padding: 1rem;
+  margin-bottom: 12%;
 }
 
 
