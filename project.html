@@ -1,123 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mahima | Portfolio</title>
+  <link rel="stylesheet" href="./style1.css">
   <link rel="stylesheet" href="./vendor/bootstrap-5/bootstrap-5.3.7-dist/css/bootstrap.css">
   <script src="./vendor/bootstrap-5/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="./vendor/fontawesome-6/fontawesome-free-6.7.2-web/css/all.css">
 </head>
+
 <body>
- <!-- Search Bar Top Navbar -->
-    <nav id="search" class="navbar bg-dark p-3">
-        <form class="d-flex w-50">
-            <input class="form-control me-2" placeholder="Search...">
-            <button class="btn btn-outline-light fw-bold">Search</button>
-        </form>
-    </nav>
-<!-- Hero Section -->
-<section class="hero d-flex flex-column justify-content-center align-items-center">
-  <div>
-    <h1>Hello, I'm Mahima</h1>
-    <p class="lead">Full Stack Developer | Frontend Expert</p>
-    <a href="#projects" class=" button btn btn-light mt-4 fa-book justify-content-center">View My Work</a>
-  </div>
-</section>
-
-<!-- About Section -->
-<section id="about" class="container py-5">
-  <h2 class="section-title">About Me</h2>
-  <div class="row align-items-center">
-    <div class="col-md-6">
-      <img src="https://via.placeholder.com/500x400" class="img-fluid rounded" alt="Profile">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-light px-4">
+    <a class="navbar-brand" href="#"><i class="fas fa-user"></i> My Portfolio</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
     </div>
-    <div class="col-md-6">
-      <p>I am a full stack web developer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I focus on building responsive full-stack web applications using technologies like React, Bootstrap, and Node.js.</p>
-    </div>
-  </div>
-</section>
+  </nav>
+  <div class="container-fluid bg-dark">
+    <!-- Hero Section -->
+    <section class="hero d-flex flex-column text-light justify-content-center align-items-center">
+      <div>
+        <h1>Hello, I'm Mahima</h1>
+        <p class="lead">Full Stack Developer | Frontend Expert</p>
+      </div>
+      <a href="#projects" class=" button btn btn-outline-light mt-4 fa-solid fa-pencil justify-content-center">View My
+        Work</a>
+    </section>
 
-<!-- Skills Section -->
-<section id="skills" class="bg-light py-5">
-  <div class="container">
-    <h2 class="section-title">Skills</h2>
-    <div class="row text-center">
-      <div class="col-md-3 mb-3"><i class="fab fa-html5 fa-2x text-danger"></i><p>HTML</p></div>
-      <div class="col-md-3 mb-3"><i class="fab fa-css3-alt fa-2x text-primary"></i><p>CSS</p></div>
-      <div class="col-md-3 mb-3"><i class="fab fa-js-square fa-2x text-warning"></i><p>JavaScript</p></div>
-      <div class="col-md-3 mb-3"><i class="fab fa-react fa-2x text-info"></i><p>React</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- Projects Section -->
-<section id="projects" class="container py-5">
-  <h2 class="section-title">Projects</h2>
-  <div class="row g-4">
-    <div class="col-md-4">
-      <div class="card">
-        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Project 1">
-        <div class="card-body">
-          <h5 class="card-title">E-commerce Store</h5>
-          <p class="card-text">Built using React, Bootstrap, and Firebase with payment gateway integration.</p>
+    <!-- About Section -->
+    <div class="container py-5 text-light">
+      <h2 class="section-title ms-4">About Me</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="./media/Screenshot 2025-07-24 145345.png" class=" image img-fluid rounded-circle ms-5">
+        </div>
+        <div class="col-md-6">
+          <p>I am a full stack web developer specializing in building (and occasionally designing) exceptional digital
+            experiences. Currently, I focus on building responsive full-stack web applications using technologies like
+            React, Bootstrap, and Node.js.</p>
         </div>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Project 2">
-        <div class="card-body">
-          <h5 class="card-title">Weather App</h5>
-          <p class="card-text">Fetches live weather using OpenWeather API, styled with Bootstrap 5.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Project 3">
-        <div class="card-body">
-          <h5 class="card-title">Portfolio Website</h5>
-          <p class="card-text">A responsive personal website to showcase projects, blogs, and contact info.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- Contact Section -->
-<section id="contact" class="bg-light py-5">
-  <div class="container">
-    <h2 class="section-title">Contact Me</h2>
+    <!-- Skills Section -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <h2 class="justify-content-center">Skills</h2>
+        <div class="row text-center">
+          <div class="col-md-3"><i class="fa-solid fa-html5"></i>
+            <p>HTML</p>
+          </div>
+          <div class="col-md-3"><i class="fa-solid fa-css3"></i>
+            <p>CSS</p>
+          </div>
+          <div class="col-md-3"><i class="fa-solid fa-javascript"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="col-md-3"><i class="fa-solid fa-bootstrap5"></i>
+            <p>Bootstrap</p>
+          </div>
+        </div>
+      </div>
+    </section><br>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+      <div class="container mb-2">
+        <h2>Projects</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card bg-dark text-light">
+              <img src="./media/form.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Responsive Form</h5>
+                <p class="card-text">Built using HTML , CSS , Bootstrap.</p>
+                <div class="card-footer p-2">
+                  <button class="btn btn-success">Join us</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-dark text-light">
+              <img src="./media/layout.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Layouts</h5>
+                <p class="card-text">Various Responsive layouts using css.</p>
+                <div class="card-footer p-2">
+                  <button class="btn btn-success">Join us</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-dark text-light">
+              <img src="./media/portfolio.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Portfolio Website</h5>
+                <p class="card-text">A responsive personal website.</p>
+                <div class="card-footer p-1">
+                  <button class="btn btn-success">Join us</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><br>
+    <!-- card -->
+    <h1 class="text-light ms-2">Store</h1>
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <div class="card-custom p-4">
+          <div class="icon-box">
+            <i class="fa-solid fa-paint-brush"></i>
+          </div>
+          <p class="content">
+            We create intuitive, visually appealing interfaces that enhance user experience and
+            navigation, ensuring your app is both beautiful and functional across all devices.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-3">
+            <h4 class="title">UI Design</h4>
+            <div class="number">01</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card-custom p-4">
+          <div class="icon-box">
+            <i class=" fa-solid fa-code"></i>
+          </div>
+          <p class="content">
+            Our team builds reliable, scalable solutions, delivering clean code that powers websites and
+            mobile apps with top-notch performance and security.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-3">
+            <h5 class="title">Development</h5>
+            <div class="number">02</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card-custom p-4">
+          <div class="icon-box">
+            <i class="fa-solid fa-pencil"></i>
+          </div>
+          <p class="content">
+            We design responsive, user-friendly websites that blend aesthetics with functionality,
+            providing a seamless experience across devices and reflecting your brand’s identity.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-3 mb-2">
+            <h5 class="title">Graphic Design</h5>
+            <div class="number">03</div>
+          </div>
+        </div>
+      </div><br>
+      <div class="col-lg-6">
+        <div class="card-custom p-4">
+          <div class="icon-box">
+            <i class="fa-solid fa-bullhorn"></i>
+          </div>
+          <p class="content">
+            We craft memorable brand identities, from logos to complete strategies, ensuring consistency
+            and a strong connection with your audience across all platforms.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-3 mb-2">
+            <h5 class="title">Branding</h5>
+            <div class="number">04</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+  <!-- Contact Section -->
+  <div class="container-fluid bg-dark">
+    <h2 class="text-light ms-3">Contact Me</h2>
     <form>
-      <div class="mb-3">
-        <label for="name" class="form-label">Full Name</label>
-        <input type="text" class="form-control" id="name" required>
+      <div class="bg-light text-dark m-3 p-3">
+        <h3>Full Name</h3>
+        <input placeholder="enter your name" class="form-control" type="text"><br>
+        <h3>Email</h3>
+        <input placeholder="enter email" class="form-control" type="text"><br>
+        <h3>Any Message</h3>
+        <textarea class="form-control">Message</textarea>
+        <button type="submit" class="btn btn-primary mt-4 p-1">Send Message</button>
       </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">Email Address</label>
-        <input type="email" class="form-control" id="email" required>
-      </div>
-      <div class="mb-3">
-        <label for="msg" class="form-label">Message</label>
-        <textarea class="form-control" id="msg" rows="4" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Send Message</button>
     </form>
   </div>
-</section>
-
-<!-- Footer -->
-<footer class="text-center">
-  <div class="container">
-    <p class="mb-1">© 2025 Mahima Kamatwar</p>
-    <div class="social-icons">
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-    </div>
   </div>
-</footer>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container-fluid bg-dark">
+      <p class="mb-1 text-light">© 2025 Mahima Kamatwar</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+  
 
 </body>
+
 </html>
