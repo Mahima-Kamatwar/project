@@ -1,0 +1,51 @@
+.body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+#img{
+    height: 90vh;
+    width: auto;
+    color: aliceblue;
+    background: linear-gradient(rgba(0, 0, 0, 0.51),rgb(34, 32, 32)),url("./media/grp.png")no-repeat center;
+    background-size: cover;
+    z-index: 1;
+}
+#content{
+    font-size: 60px;
+    position: relative;
+    z-index: 2;
+}
+#about .me {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  color: black;
+  filter: none!important;
+
+}
+.custom-section{
+    height: 115vh;
+    background: linear-gradient(rgba(17, 29, 63, 0.689),rgb(41, 43, 95),rgb(24, 22, 53));
+}
+#img1{
+    height: 110vh;
+    width: auto;
+    color: beige;
+    background:url("./media/temp2.png")no-repeat;
+    background-size: cover;
+}
+#about img {
+    width: 150px;
+    filter: brightness(0) invert(1) opacity(50%);
+    transition: all 0.5s ease;
+}
+
+#about img:hover {
+    filter: brightness(1) invert(0) opacity(100%);
+}
+.custom-color{
+    height: 70vh;
+    background: linear-gradient(rgb(52, 2, 56),rgb(68, 2, 71),rgb(72, 29, 79));
+}
+
