@@ -1,144 +1,22 @@
-#header .nav-link {
-  position: relative;
-  overflow: hidden;
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+#home .btn:hover{
+    background-color: plum;
+    box-shadow:0 8px 20px rgb(60, 60, 60);
+}
+#services .btn:hover{
+    background-color: plum;
+    transform: translateY(-8px);
 }
 
-#header .nav-link::before {
-  content: "";
-  width: 0%;
-  height: 5px;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  border-radius: 14px;
-  transform: translateX(-50%);
-  background: linear-gradient(15deg, rgba(var(--primaryRGB), 1) 50%, rgba(var(--secondaryRGB), 1) 50%);
-  transition: all 0.25s ease;
-}
+#about .me {
+     height: 300%;
+    width: 200%;
+    margin-top: 80px;}
 
-#header .nav-link:hover::before {
-  width: 100%;
-}
-
-#header .nav-item {
-  height: 4px;
-  width: auto;
-  font-size: 2rem;
-  padding: 1rem;
-  margin-bottom: 12%;
-}
-
-
-.button {
-  font-family: monospace;
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
-}
-
-.image {
-  height: 150px;
-  width: 300px;
-  margin: auto;
-
-}
-
-.card-custom {
-  border: none;
-  border-radius: 50px;
-  background: #ddd9d9;
-  padding: 15px;
-  height: 100%;
-  transition: all 0.4s ease;
-}
-
-.card-custom:hover {
-  border: #999;
-  transform: translateY(-8px);
-  box-shadow: black;
-  cursor: pointer;
-}
-
-.icon-box {
-  width: 50px;
-  height: 50px;
-  background-color: #f0f0f0;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 15px;
-}
-
-.number {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #999;
-  text-align: right;
-}
-
-.title {
-  font-weight: 600;
-  font-size: 1.2rem;
-}
-
-.content {
-  font-size: 0.95rem;
-  color: gray;
-}
-
-.course-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 1.5rem;
-}
-
-.box {
-  background: linear-gradient(to bottom right, #0d4f70, #215d7b, rgb(1, 33, 50));
-  border-radius: 20px;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 300px;
-  width: auto;
-  transition: all 0.3s ease, 0.3s ease;
-  cursor: pointer;
-
-}
-
-.box:hover {
-  transform: scale(1.05);
-  background: linear-gradient(to bottom right, #6d92a2, #104661);
-}
-
-.box h1 {
-  font-size: 2rem;
-  margin-bottom: 0.3rem;
-  color: #f1f1f1;
-}
-
-.box .mid {
-  margin: 1rem 0;
-  font-size: 1%;
-  color: #eceff1;
-}
-
-.box .bottom {
-  display: flex;
-  font-size: 0.90rem;
-  color: #b0bec5;
-  justify-content: space-between;
-}
-
-.box a {
-  text-decoration: none;
-  color: #64b5f6;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.box a:hover {
-  color: #89beea;
-}
+ .service-card:hover{
+    box-shadow:0 8px 10px rgb(214, 212, 212); 
+     transform: translateY(-8px);
+ }  

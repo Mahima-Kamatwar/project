@@ -1,0 +1,98 @@
+/* colors */
+:root{
+    
+--blueHex :#0E2148;
+--navyHex:#483AA0;
+--purpleHex:#7965C1;
+--beigeHex:#E3D095;
+
+
+--blueRGB: rgb(14, 33, 72);
+--navyRGB:rgb(72, 58, 160);
+--purpleRGB:rgb(121, 101, 193);
+--beigeRGB:rgb(227, 208, 149);
+}
+/* background */
+.bg-blue {
+  background-color: var(--blueHex);
+}
+
+.bg-navy {
+  background-color: var(--navyHex);
+}
+
+.bg-purple {
+  background-color: var(--purpleHex);
+}
+
+.bg-beige {
+  background-color: var(--beigeHex);
+}
+
+.bg-white {
+  background-color: var(--whiteHex);
+}
+/* textcolor */
+.text-blue {
+  color: var(--blueHex);}
+
+.text-navy {
+  color: var(--navyHex);
+}
+
+.text-purple {
+  color: var(--purpleHex);
+}
+
+.text-beige {
+  color: var(--beigeHex);
+}
+
+.text-white {
+  color: var(--whiteHex);
+}
+/* border */
+.border-blue {
+  border: 1px solid var(--blueHex);
+}
+
+.border-navy {
+  border: 1px solid var(--navyHex);
+}
+
+.border-purple {
+  border: 1px solid var(--purpleHex);
+}
+
+.border-beige {
+  border: 1px solid var(--beigeHex);
+}
+
+.border-white {
+  border: 1px solid var(--whiteHex);
+}
+/* button */
+.btn-dark {
+  background-color: var(--darkHex);
+  color: var(--whiteHex);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-dark:hover {
+  opacity: 0.9;
+}
+
+.btn-purple {
+  background-color: var(--purpleHex);
+  color: var(--whiteHex);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-purple:hover {
+  opacity: 0.9;
+}
+
