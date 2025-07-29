@@ -20,3 +20,12 @@ body {
     box-shadow:0 8px 10px rgb(214, 212, 212); 
      transform: translateY(-8px);
  }  
+ #contact .btn:hover{
+     background-color: plum;
+    transform: translateY(5px);
+ }
+ #contact.grid{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: repeat(2,1fr);
+ }
