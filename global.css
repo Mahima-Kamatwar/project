@@ -95,4 +95,50 @@
 .btn-purple:hover {
   opacity: 0.9;
 }
+/* table bg */
+.table-bg-blue {
+  background-color: var(--blueHex);
+  color: white;
+}
+
+.table-bg-navy {
+  background-color: var(--navyHex);
+  color: white;
+}
+
+.table-bg-purple {
+  background-color: var(--purpleHex);
+  color: white;
+}
+
+.table-bg-beige {
+  background-color: var(--beigeHex);
+  color: black;
+}
+
+/* Table Header Color */
+.table-header-blue th {
+  background-color: var(--blueHex);
+  color: white;
+}
+
+.table-header-purple th {
+  background-color: var(--purpleHex);
+  color: white;
+}
+
+/* Border Utility */
+.table-border-blue {
+  border: 2px solid var(--blueHex);
+}
+
+.table-border-navy {
+  border: 2px solid var(--navyHex);
+}
+
+/* Row Highlight */
+.table-row-hover tbody tr:hover {
+  background-color: var(--beigeHex);
+  color: black;
+}
 
