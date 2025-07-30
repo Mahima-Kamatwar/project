@@ -83,6 +83,14 @@
 .btn-dark:hover {
   opacity: 0.9;
 }
+.btn-navy{
+  background-color: #483AA0;
+  color: aliceblue;
+}
+.btn-blue{
+  background-color: #0E2148;
+  color: aliceblue;
+}
 
 .btn-purple {
   background-color: var(--purpleHex);

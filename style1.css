@@ -1,4 +1,4 @@
-
+ 
 body {
   font-family: 'Segoe UI', sans-serif;
 }
@@ -12,11 +12,63 @@ body {
     box-shadow:0 8px 20px rgb(60, 60, 60);
 
 }
+  #about .image-container {
+      position: relative;
+      width: 400px;
+      height: 300px;
+      margin: 40px auto;
+    }
 
-#about .me {
-     height: 300%;
-    width: 200%;
-    margin-top: 80px;}
+   #about .image-container img {
+       width: 100%; 
+      height: 100%; 
+      border-radius: 30px;
+      position: relative;
+      z-index: 2;
+      object-fit: cover;
+    } 
+
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      z-index: 1;
+      opacity: 0.5;
+    }
+
+   
+     .circle1 {
+      width: 300px;
+      height: 300px;
+      background-color: #82239a; 
+      bottom: 20%;
+      left: -40px;
+      animation: moveLeft 4s infinite ease-in-out;
+    }
+
+    .circle2 {
+      width: 300px;
+      height: 300px;
+      background-color: #041238;
+      top: 20%; 
+      right: -40px;
+      animation: moveRight 4s infinite ease-in-out;
+    }
+
+
+    @keyframes moveLeft {
+      0% { transform: translateX(0); }
+      50% { transform: translateX(250px); }
+      100% { transform: translateX(0); }
+    }
+
+    @keyframes moveRight {
+      0% { transform: translateX(0); }
+      50% { transform: translateX(-250px); }
+      100% { transform: translateX(0); }
+    }
+ 
+
+
 
  .service-card:hover{
     box-shadow:0 8px 10px rgb(214, 212, 212); 
@@ -41,6 +93,7 @@ body {
     align-items:center;
     margin-top: 30%;
     margin-left: 30%;
+    border-radius: 30px;
  }
  #contact .t:hover{
     background-color: plum;
